@@ -1,6 +1,6 @@
 //The file road-not-taken does not look right at all.
 //Checkout the HEAD version of the road-not-taken.txt to discard changes made to the working directory
-$git checkout HEAD road-not-taken.txt
+$ git checkout HEAD road-not-taken.txt
 
 //Take a lookat oven-bird.txt to see if it has also been tampered with
 //Discard the changes in the working directory again
