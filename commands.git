@@ -1,0 +1,34 @@
+//The file road-not-taken does not look right at all.
+//Checkout the HEAD version of the road-not-taken.txt to discard changes made to the working directory
+$git checkout HEAD road-not-taken.txt
+
+//Take a lookat oven-bird.txt to see if it has also been tampered with
+//Discard the changes in the working directory again
+$ git checkout -- oven-bird.txt
+
+//Check the dif of the fire-and-ice.txt file 
+$ git diff fire-and-ice.txt
+
+//Add all three of the files to the staging area in a single command
+$ git add .
+
+//Before you commit, remove this file from the staging area
+$ git reset HEAD fire-and-ice.txt
+
+//Make a commit to all files
+$ git commit -m "remove fire-and-ice.txt"
+
+//Add all three changed files to the staging area
+$ git add .
+
+//Make a commit
+$ git commit -m "add cheese doodles"
+
+//Reset your projects to the past commit of your drastic changes
+$ git reset 145299f
+
+//You want to discard files in the working directoryand restore the files
+//to the way they looked in the HEAD commit
+$ git checkout HEAD road-not-taken.txt
+$ git checkout HEAD oven-bird.txt
+$ git checkout HEAD fire-and-ice.txt
